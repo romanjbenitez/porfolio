@@ -1,57 +1,188 @@
-@import url('https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap");
 
-.header{
-    width: 15vw;
-    background-color: #040405;
-    height: 100vh;
-    justify-content: space-between;
+.header {
+  width: 15vw;
+  background-color: #040405;
+  height: 100vh;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  .logo {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    img {
+      height: 2.5rem;
+    }
+    p {
+      padding-top: 0.5rem;
+      color: #7ed957;
+      font-size: 1.8rem;
+      font-family: "Khand", sans-serif;
+    }
+  }
+  .nav {
     display: flex;
     flex-direction: column;
-    .logo{
-        padding: 2rem;
-        width: 100%;
+    justify-content: flex-start;
+    padding-bottom: 7rem;
+
+    .link {
+      margin: 0.5rem;
+      padding: 0 2rem;
+      transition: all 0.2s ease-in-out;
+      border-left: 0px solid black;
+      a {
+        margin-left: 0.5rem;
+        color: aliceblue;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
         display: flex;
-        img{
-            height: 2.5rem;
+        align-items: center;
+      }
+      p {
+        margin-right: 0.5rem;
+        font-size: 2rem;
+        color: aliceblue;
+        transition: all 0.2s ease-in-out;
+      }
+      &:hover,
+      &:focus {
+        border-left: #7ed957 5px solid;
+        p,
+        a {
+          color: #7ed957;
         }
-        p{
-            padding-top: .5rem;
-            color: #7ed957;
-            font-size: 1.8rem;
-            font-family: 'Khand', sans-serif;
-        }
+      }
     }
-    .nav{
+    .active {
+      transition: all 0.2s ease-in-out;
+      border-left: #7ed957 5px solid;
+      p,
+      a {
+        color: #7ed957;
+      }
+    }
+  }
+  .social-icons-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    .social-icons {
+      margin: 0 0.5rem;
+      font-size: 2.5rem;
+      color: #7ed957;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 1503px) and (max-width: 1720px) {
+  .header {
+    .logo {
+      padding: 2rem 1rem;
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1360px) and (max-width: 1502px) {
+  .header {
+    .logo {
+      padding: 2rem 1rem;
+      p {
+        padding-top: 0.3rem;
+        font-size: 1.6rem;
+      }
+      img {
+        height: 2rem;
+      }
+    }
+    .nav {
+      .link {
+        padding: 0 1rem;
+      }
+    }
+  }
+}
+@media (min-width: 1001px) and (max-width: 1359px) {
+  .header {
+    width: 20vw;
+    .logo {
+      padding: 2rem 0.5rem;
+      p {
+        padding-top: 0.3rem;
+        font-size: 1.6rem;
+      }
+      img {
+        height: 2rem;
+      }
+    }
+    .nav {
+      .link {
+        padding: 0 0.5rem;
+      }
+    }
+  }
+}
+@media (min-width: 0px) and (max-width: 1000px) {
+  .header {
+    position: fixed;
+    height: 4rem;
+    width: 100vw;
+    bottom: 0px;
+    .logo {
+      display: none;
+      padding: 2rem 0.5rem;
+      p {
+        padding-top: 0.3rem;
+        font-size: 1.6rem;
+      }
+      img {
+        height: 2rem;
+      }
+    }
+    .nav {
+      flex-direction: row;
+      padding: 0;
+      align-items: center;
+      height: 100%;
+      .link {
+        margin: 0;
+        width: 25%;
+        height: 100%;
+        padding: 0;
+        border-top: solid #040405 0px;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding-bottom: 7rem;
-        .link{  
-            margin: .5rem;
-            padding: 0 2rem;
-            display: flex;
-            align-items: center;
-            a{
-                margin-left: .5rem;
-                color: aliceblue;
-                text-decoration: none;
-            }
-            p{
-                font-size: 2rem;
-                color: aliceblue;
-            }
+        align-items: center;
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          span {
+            display: none;
+          }
         }
-    }
-    .social-icons-container{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding: 2rem;
-        .social-icons{
-            margin: 0 .5rem;
-            font-size: 2.5rem;
-            color: #7ed957;
+        &:hover,
+        &:focus {
+          border-top: #7ed957 5px solid;
+          border-left: none;
         }
+        
+      }
+      .active {
+        transition: all 0.2s ease-in-out;
+        border-top: #7ed957 5px solid;
+        border-left: none;
+      }
     }
-    
+    .social-icons-container {
+      display: none;
+    }
+  }
 }
