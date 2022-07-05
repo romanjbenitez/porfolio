@@ -4,7 +4,7 @@ import Logo from "../assets/Logo.png";
 import {AiOutlineHome, AiOutlineAppstoreAdd, AiOutlineBook, AiFillLinkedin ,AiFillMail} from "react-icons/ai";
 import { IoPaperPlaneOutline, IoMailSharp } from "react-icons/io5";
 import { FaGithubAlt } from "react-icons/fa";
-
+import {Link} from "react-router-dom"
 
 
 function Header() {
@@ -25,18 +25,21 @@ for(let i = 0; i<2; i++){
       </div>
       <div className="nav">
         <div className={active ===  0 ?  "link active" : 'link'} onClick={() => {setActive(0)}}>
-          <a href="#"><p><AiOutlineHome/></p> <span>INICIO</span></a>
+        <Link to="/"> <p><AiOutlineHome/></p> <span>INICIO</span></Link>
+
+         
         </div>
         <div className={active ===  1 ?  "link active" : 'link'}  onClick={() => {setActive(1)}}>
+        <Link to="/about"><p><AiOutlineBook/></p><span>SOBRE MI</span></Link>
           
-          <a href="#"><p><AiOutlineBook/></p><span>SOBRE MI</span></a>
         </div>
         <div className={active ===  2 ?  "link active" : 'link'}  onClick={() => {setActive(2)}}>
+        <Link to="/projects"><p><AiOutlineAppstoreAdd /></p><span>PROYECTOS</span></Link>
           
-          <a href="#"><p><AiOutlineAppstoreAdd /></p><span>PROYECTOS</span></a>
         </div>
         <div className={active ===  3 ?  "link active" : 'link'}  onClick={() => {setActive(3)}}>
-          <a href="#"><p><IoPaperPlaneOutline /></p><span>CONTACTO</span></a>
+        <Link to="/contact"><p><IoPaperPlaneOutline /></p><span>CONTACTO</span></Link>
+          
         </div>
       </div>
       <div className="social-icons-container">
