@@ -10,7 +10,12 @@ import { FaGithubAlt } from "react-icons/fa";
 function Header() {
 
 const [active, setActive] = useState(0)
-
+const [animationTiming, setAnimationTiming] = useState(100)
+for(let i = 0; i<2; i++){
+  setTimeout(() => {
+    setAnimationTiming(animationTiming + 100)
+  }, animationTiming)
+}
 
   return (
     <div className="header">
@@ -35,9 +40,9 @@ const [active, setActive] = useState(0)
         </div>
       </div>
       <div className="social-icons-container">
-        <FaGithubAlt className="social-icons"/>
-        <AiFillLinkedin className="social-icons"/>
-        <IoMailSharp className="social-icons"/>
+        <FaGithubAlt className={animationTiming >=  100 ?  "social-icons slide-top" : 'social-icons'}/>
+        <AiFillLinkedin className={animationTiming >=  200 ?  "social-icons slide-top" : 'social-icons'} />
+        <IoMailSharp className={animationTiming >=  300 ?  "social-icons slide-top" : 'social-icons'} />
       </div>
     </div>
   );
