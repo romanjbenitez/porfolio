@@ -1,10 +1,15 @@
 import './App.scss'
 import Header from './components/Header'
+import Home from './components/Home'
 
 function App() {
   return (
     <div className="App">
+      <div className='layout'>
       <Header/>
+      <Home/>
+      </div>
+
     </div>
   )
 }

@@ -130,6 +130,7 @@
 }
 @media (min-width: 0px) and (max-width: 1000px) {
   .header {
+    z-index: 1;
     position: fixed;
     height: 4rem;
     width: 100vw;
@@ -192,6 +193,13 @@
   animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
     alternate both;
 }
+.slide-top2 {
+  -webkit-animation: slide-top2 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+    alternate both;
+  animation: slide-top2 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+    alternate both;
+}
+
 
 
 
@@ -213,5 +221,26 @@
   100% {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
+  }
+}
+
+@-webkit-keyframes slide-top2 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+@keyframes slide-top2 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
   }
 }
