@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
 function Projects() {
   return (
-    <div>Projects</div>
-  )
+    <div className="container">
+      <div className="blur">
+      </div>
+    </div>
+  );
 }
 
-export default Projects
+export default Projects;

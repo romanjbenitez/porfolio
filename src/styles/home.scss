@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
-.container-home {
+.container {
   background-image: url("../assets/fondo.png");
-  width: 100vw;
-  background-size: contain;
-  > div {
+  width: 85vw;
+  background-size: cover;
+  > .blur{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -12,7 +12,7 @@
     background-color: rgba(3, 3, 3, 0.596);
     height: 100%;
     backdrop-filter: blur(5px) grayscale(1);
-
+    background-position: 50% 50%;
     .subcontainer-home-1 {
       font-family: "PT Sans", sans-serif;
       h1 {
@@ -44,8 +44,8 @@
 }
 
 @media (min-width: 1360px) and (max-width: 1502px) {
-  .container-home {
-    > div {
+  .container {
+    > .blur {
       .subcontainer-home-1 {
         h1 {
           font-size: 3.5rem;
@@ -68,13 +68,12 @@
         }
       }
     }
-
   }
 }
 
 @media (min-width: 1001px) and (max-width: 1359px) {
-  .container-home {
-    > div {
+  .container {
+    > .blur {
       .subcontainer-home-1 {
         h1 {
           font-size: 2.5rem;
@@ -97,14 +96,16 @@
         }
       }
     }
-
   }
 }
 
-@media (min-width: 0px) and (max-width: 1000px){
-  .container-home{
+@media (min-width: 0px) and (max-width: 1000px) {
+  .container {
+    width: 100vw;
     height: 95vh;
-    >div{
+    background-size: cover;
+
+    > .blur {
       flex-direction: column-reverse;
       height: 100%;
       .subcontainer-home-1 {
@@ -132,5 +133,46 @@
         }
       }
     }
+  }
+}
+
+.bounce-in-top {
+  animation: bounce-in-top 1.1s both;
+}
+
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
   }
 }

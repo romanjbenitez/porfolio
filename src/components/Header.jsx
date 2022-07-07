@@ -8,8 +8,8 @@ import {Link} from "react-router-dom"
 
 
 function Header() {
-
-const [active, setActive] = useState(0)
+const url = window.location.toString();
+const [active, setActive] = useState(url.includes("about") ? 1 : url.includes("projects") ? 2 : url.includes("contact") ? 3 : 0)
 const [animationTiming, setAnimationTiming] = useState(100)
 for(let i = 0; i<2; i++){
   setTimeout(() => {
@@ -18,7 +18,7 @@ for(let i = 0; i<2; i++){
 }
 
   return (
-    <div className="header">
+    <div className="header slide-in-left">
       <div className="logo">
         <img src={Logo} alt="" />
         <p>Roman Benitez</p>

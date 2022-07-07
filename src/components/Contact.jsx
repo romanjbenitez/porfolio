@@ -2,7 +2,11 @@ import React from 'react'
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <div className="container">
+    <div className="blur">
+
+    </div>
+  </div>
   )
 }
 
