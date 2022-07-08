@@ -43,9 +43,9 @@ for(let i = 0; i<2; i++){
         </div>
       </div>
       <div className="social-icons-container">
-        <FaGithubAlt className={animationTiming >=  100 ?  "social-icons slide-top" : 'social-icons'}/>
-        <AiFillLinkedin className={animationTiming >=  200 ?  "social-icons slide-top" : 'social-icons'} />
-        <IoMailSharp className={animationTiming >=  300 ?  "social-icons slide-top" : 'social-icons'} />
+      <a href="https://github.com/romanjbenitez" target="_blank"><FaGithubAlt className={animationTiming >=  100 ?  "social-icons slide-top" : 'social-icons'}/></a>
+        <a href="https://www.linkedin.com/in/romanjbenitez/" target="_blank"><AiFillLinkedin className={animationTiming >=  200 ?  "social-icons slide-top" : 'social-icons'} /></a>
+        <a href="mailto:roman200217@gmail.com"><IoMailSharp className={animationTiming >=  300 ?  "social-icons slide-top" : 'social-icons'} /></a>
       </div>
     </div>
   );

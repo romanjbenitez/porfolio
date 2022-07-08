@@ -23,13 +23,13 @@ for(let i = 0; i<2; i++){
           </h1>
           <h2>Desarrollador web fullstack</h2>
           <div className="social-icons-container ">
-             <FaGithubAlt className={animationTiming >=  100 ?  "social-icons slide-top2" : 'social-icons'}/>
-             <AiFillLinkedin className={animationTiming >=  200 ?  "social-icons slide-top2" : 'social-icons'} />
-             <IoMailSharp className={animationTiming >=  300 ?  "social-icons slide-top2" : 'social-icons'} />
+          <a href="https://github.com/romanjbenitez" target="_blank"><FaGithubAlt className={animationTiming >=  100 ?  "social-icons slide-top" : 'social-icons'}/></a>
+        <a href="https://www.linkedin.com/in/romanjbenitez/" target="_blank"><AiFillLinkedin className={animationTiming >=  200 ?  "social-icons slide-top" : 'social-icons'} /></a>
+        <a href="mailto:roman200217@gmail.com"><IoMailSharp className={animationTiming >=  300 ?  "social-icons slide-top" : 'social-icons'} /></a>
           </div>
         </div>
         <div className="subcontainer-home-2 bounce-in-top">
-          <img src={Roman} alt="" srcset="" />
+          <img src={Roman} alt="" />
         </div>
       </div>
     </div>

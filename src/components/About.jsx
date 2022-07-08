@@ -9,14 +9,14 @@ function About() {
   return (
     <div className="container height">
       <div className="blur about">
-        <div className="subcontainer-about">
+        <div className="subcontainer-about scale-in-center">
           <h2>Sobre mi</h2>
           <p>
             Hola, me llamo Roman,soy apasionado por la tecnología y
             desarrollador web full stack junior, tengo gran capacidad de
             absorción de conocimientos y me gusta superar mis objetivos
             constantemente, además disfruto trabajar en equipo y ayudar a los
-            demás.
+            demás.</p>
             <p>
               En julio 2022, me gradué del bootcamp de desarrollo Full Stack
               Java en MindHub LA en donde inverti más 700 hs para educarme y
@@ -31,10 +31,10 @@ function About() {
               industria, en donde se me permita demostrar mis habilidades y su
               vez poder aprender mucho en el proceso.
             </p>
-          </p>
-          <button class="button"> Descargar CV</button>
+          
+          <button className="button"> Descargar CV</button>
         </div>
-        <div className="subcontainer-about2">
+        <div className="subcontainer-about2 bounce-in-top">
           <h2>Tecnologías</h2>
           <div className="tech-container">
             <div className="tech"><p>JAVA</p><FaJava/></div>
