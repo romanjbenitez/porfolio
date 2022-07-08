@@ -32,7 +32,7 @@ function About() {
               vez poder aprender mucho en el proceso.
             </p>
           
-          <button className="button"> Descargar CV</button>
+          <button className="button"><a href="https://drive.google.com/file/d/1hwNutWD72uS-p9y-gdf3AyJq_lQR3ith/view?usp=sharing" target="_blank">Ver curriculum</a></button>
         </div>
         <div className="subcontainer-about2 bounce-in-top">
           <h2>Tecnologías</h2>
