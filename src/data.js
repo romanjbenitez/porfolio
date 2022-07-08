@@ -29,7 +29,7 @@ const data = [
         descripcion: "Ecomerce realizado con VueJs y bootstrap, el mismo se desarrollo en grupo, consume una api, permitiendo que un usuario pueda realizar diversas acciones.",
         demo: "https://petshop-franco.vercel.app/index.html",
         repo: "https://github.com/romanjbenitez/Petshop-Franco",
-        urlImage: "./imgs/Proyecto4.png"
+        urlImage: "../assets/Proyecto4.png"
     },
     {
         nombre: "Mindhub Broters Online Bank",
