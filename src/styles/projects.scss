@@ -165,8 +165,17 @@ ul {
     }
   }
 }
-@media (min-width: 0px) and (max-width: 1000px) {
+@media (min-width: 600px) and (max-width: 1000px) {
   .projects{
     gap: 5rem;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 599px) {
+  .social-media li {
+    a {
+      padding: .5rem 1.5rem;
+      font-size: 1.2rem;
+    }
   }
 }
